@@ -476,18 +476,53 @@ body {
 
 /* -------------------PRIVATE FUNCTIONS STYLES---------------*/
 .private-functions {
-	height: 1000px;
+	height: 800px;
 	background: url("Images/privatefunctionsbg.jpg") top center repeat repeat;
+}
 
+.private-functions .container {
+	width: 900px;
+	float: center;
+}
+
+.private-functions h1 {
+	margin-top: 300px;
+	font-family: 'Dosis', sans-serif;
+	font-style: bold;
+	font-size: 108px;
+	color: white;
+}
+
+.private-functions p {
+	font-size: 32px;
+	color: white;
+}
+
+.booking {
+	background: #BB3232;
+	color: white;
+	padding: 10px 30px;
+	font-size: 36px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.booking:hover {
+	color: black;
+	text-decoration: none;
+	background: white;
+	cursor: pointer; 
+	transition: background .5s;  
 }
 
 .private-function-details .container {
 	width: 900px;
 	float: center;
+
 }
 
 .details {
-	margin-top: 40px;
+	margin-top: 30px;
 	font-size: 24px;
 	text-align: left;
 }
@@ -501,6 +536,8 @@ body {
     background: black;
     width: 70%;
 }
+
+
 
 
 
