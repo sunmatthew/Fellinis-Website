@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fellini's Italian Eatery</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300|Raleway|Dosis' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".mobile-show").click(function() {
+					$(".navigation .container").hide();
+					$(".mobile-nav").slideDown("slow");
+				});
+
+				$(".mobile-close").click(function() {
+					$(".mobile-nav").slideUp("slow", function (){
+						$(".navigation .container").show();
+					});
+				});
+			
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="navigation">
+			
+			<div class="mobile-nav">
+				<button class="mobile-close"><strong>X</strong></button>
+				<ul class="nav-mobile">
+					<li class="adjust"><a href="index.html">Home</a></li>
+					<li><a href="catering.html">Catering</a></li>
+					<li><a href="takeoutspecials.html">Takeout Specials</a></li>
+					<li><a href="privatefunctions.html">Private Functions</a></li>
+				</ul>
+			</div>
+
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="Images/fellinilogo.gif"></a>
+				</div>
+				<div class="top-banner">
+					<a href="#"><img src="Images/callin.png"></a>
+				</div>
+
+				<div class="nav-bar">
+					<ul class="nav">
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "catering.html">Catering</a></li>
+						<li><a href = "takeoutspecials.html">Takeout Specials</a></li>
+						<li><a href = "privatefunctions.html">Private Functions</a></li>
+					</ul>
+				</div>
+				
+				<button class="mobile-show">
+					<img src="Images/expand.png" height="35">
+				</button>
+			</div>
+		</div>
+
+		<div class="private-functions">
+
+		</div>
+
+		<div class="private-function-details">
+			<div class="container">
+				<ul class="details">
+					<li>Our facility can hold parties of up to 60 people</li>
+					<li>Hours availible to hold a private Lunch-In are from 11:00am - 3:45pm Monday to Saturday, minimum of 25 people</li>
+					<li>Sundays we are availible for baptisms, communions, confirmations, showers, engagement parties etc. with minimum of 35 people</li>
+					<li>We also cater full course meals for any gathering, corporate or family</li>
+					<li>Call <strong>(905)773-2211</strong> to book an appointment and arrange a set menu and date</li>
+				</ul>
+				<hr>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<p class>Prices and Items subject to change without notice. Taxes not included | &copy; Fellini's Italian Eatery Inc.</p>
+				<div class="footer-text">
+					<a href="#">Contact Us</a>
+					 | 
+					<a href="#"> Job Inquires</a>
+				</div>
+				<div class="footer-images">
+					<img src="Images/weaccept.gif?">
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+
+
+</html>

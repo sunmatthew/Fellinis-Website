@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fellini's Italian Eatery</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300|Raleway|Dosis' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".mobile-show").click(function() {
+					$(".navigation .container").hide();
+					$(".mobile-nav").slideDown("slow");
+				});
+
+				$(".mobile-close").click(function() {
+					$(".mobile-nav").slideUp("slow", function (){
+						$(".navigation .container").show();
+					});
+				});
+			
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="navigation">
+			
+			<div class="mobile-nav">
+				<button class="mobile-close"><strong>X</strong></button>
+				<ul class="nav-mobile">
+					<li class="adjust"><a href="index.html">Home</a></li>
+					<li><a href="catering.html">Catering</a></li>
+					<li><a href="takeoutspecials.html">Takeout Specials</a></li>
+					<li><a href="privatefunctions.html">Private Functions</a></li>
+				</ul>
+			</div>
+
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="Images/fellinilogo.gif"></a>
+				</div>
+				<div class="top-banner">
+					<a href="#"><img src="Images/callin.png"></a>
+				</div>
+
+				<div class="nav-bar">
+					<ul class="nav">
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "catering.html">Catering</a></li>
+						<li><a href = "takeoutspecials.html">Takeout Specials</a></li>
+						<li><a href = "privatefunctions.html">Private Functions</a></li>
+					</ul>
+				</div>
+				
+				<button class="mobile-show">
+					<img src="Images/expand.png" height="35">
+				</button>
+			</div>
+		</div>
+
+		<div class="catering">
+			<div class="container">
+				<h1>Catering</h1>
+				<hr>
+				<div class="catering-text">
+					<p>Do you have an event that you would like us to cater? Tired of slaving over a hot stove all day? Try Fellini's catering! Just in time for the good weather! Contact Fellini's today to arrange for a set menu for your special occasions.</p>
+				</div>
+				<div class="catering-image">
+					<img src = "Images/cateringsetup.jpg" height="250px"> 
+				</div>
+				<hr>
+				<p>Document viewer not working? <a href="Menus/cateringmenu.pdf" target="_blank">Click Here</a> to download the menu.</p>
+				
+			</div>
+		</div>
+
+		<div class="menu-viewer">
+			<div class="container">
+				<div class="catering-menu">
+					<iframe src="Menus/cateringmenu.pdf" style="width:800px; height:600px;" frameborder="0" target="_blank"></iframe>
+				</div>	
+				<hr>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<p class>Prices and Items subject to change without notice. Taxes not included | &copy; Fellini's Italian Eatery Inc.</p>
+				<div class="footer-text">
+					<a href="#">Contact Us</a>
+					 | 
+					<a href="#"> Job Inquires</a>
+				</div>
+				<div class="footer-images">
+					<img src="Images/weaccept.gif?">
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+
+
+</html>

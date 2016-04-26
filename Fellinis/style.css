@@ -1,0 +1,507 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #F2F2F2;	
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
+}
+
+
+.container {
+	width: 80em;
+	padding 0;
+	margin: 0 auto;
+	text-align: center;
+	float: center;
+}
+
+/*----------------HOMEPAGE STYLES-----------------------*/
+
+.navigation {
+	background:url("Images/banner.png") top center repeat-x; 
+	position: fixed;
+	width: 100%;
+}
+
+.logo, .top-banner {
+	display: block;
+	float: left;
+}
+
+.logo {
+	text-align: right;
+}
+
+.logo img {
+	width: 150px;
+}
+
+.top-banner {
+	float: right;
+	width: 800px;
+}
+
+.top-banner img {
+	width: 40em;
+}
+
+@media only screen and (min-width: 1000px){
+	.nav-bar {
+		width: 975px;
+		float: right;
+		margin-right: 105px;
+	}
+	
+	.navigation .container {
+		color: white;
+		width: 90em;
+	}
+	
+	.nav ul {
+		list-style-type: none;
+		text-align: center;
+		color: white;
+	}
+	
+	.nav li {
+		display: inline-block;
+		font-size: 24px;
+		padding-right: 20px;
+		padding-left: 20px;
+		text-transform: uppercase;
+		color: white;
+	}
+	
+	.nav a {
+		text-decoration: none;
+		color: white;
+	}
+	
+	.nav a:hover, li:hover {
+		transition: background .5s;  
+		background: transparent !important;
+		color: black;
+	}
+	
+	.mobile-show {
+		display: none;
+	}
+	
+	.mobile-nav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	.nav-bar {
+		display: none;
+	}
+	
+	.top-banner {
+		display: none;
+	}
+	
+	.mobile-show {
+		margin-top: 100px;
+		float: left;
+		background-color: #E8E8E8;
+		border-radius: 9px;
+		border: none;
+		width: 50px;
+		height: 37px;
+		text-align: center;
+		padding: 0;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	
+	.mobile-nav {
+		background-color: #BB3232;
+		text-align: center;
+		list-style-type: none;
+		display: none;
+	}
+	
+	.mobile-nav ul {
+		text-align: center;
+		list-style-type: none;
+		color: white;
+		font-size: 30px;
+		padding: 0;
+	}
+	
+	.mobile-nav a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.mobile-nav .adjust {
+		padding-right: 30px;
+	}
+
+	.mobile-nav a:hover {
+		transition: color .2s;  
+		color: black;
+	}
+
+	.mobile-nav li:hover {
+		background: #AB3232;
+	}
+
+	.mobile-nav .mobile-close {
+		margin-top: 5px;
+		margin-left: 5px;
+		background: white;
+		color: #bb3232;	
+		border: none;
+		border-radius: 20px;
+		font-size: 16px;
+		width: 30px;
+		height: 30px;
+		float: left;
+	}
+
+	.mobile-nav .mobile-close:hover {
+		background: black;
+		color: white;
+	}
+
+}
+
+.menu-text, .menu-image {
+	min-height: 450px;
+	float: left;
+	display: block;
+	margin-top: 140px;
+
+}
+
+.menu-image {
+	width: 620px;
+}
+
+.menu-text {
+	width: 425px;
+	background-color: #000000;
+	font-family: 'Dosis', sans-serif;
+	text-align: left;
+	padding-left: 25px;
+	color: white;
+	font-size: 30px;
+}
+
+.menu-text h1 {
+	color:#FF3232;
+	font-size: 72px;
+	text-transform: uppercase;
+}
+
+.menu-text p {
+	margin-bottom: 40px;
+}
+
+.button {
+  margin-left: 95px;
+  background: #BB3232;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+	color: black;
+	text-decoration: none;
+	background: white;
+	cursor: pointer; 
+	transition: background .5s;  
+}
+
+.specials .container {
+	border-bottom: 2px solid black;
+}
+
+.dinner-two, .dinner-four, .pizzeria {
+	min-height: 550px;
+	float: left;
+	display: block;
+	width: 348px;
+}
+
+.placeholder {
+	height: 250px;
+	width: 250px;
+	text-align: center;
+	margin-top: 49px;
+}
+
+.subtitle {
+	font-family: 'Dosis', sans-serif;
+	font-size: 48px;
+}
+
+.description {
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 18px;
+}
+
+.subscribers {
+	margin-top: 40px;
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.subscribers .container {
+	width: 30em;
+	float: center;
+}
+
+.subscribers .container h1 {
+	font-family: 'Dosis', sans-serif;
+	font-style: bold;
+	font-size: 3em;
+}
+
+.subscribers .container p {
+	font-size: 1em;
+}
+
+.subscribers .button {
+  background: #BB3232;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.subscribers .button:hover, .extra-info .button:hover {
+	color: white;
+	text-decoration: none;
+	background: #cb3c3c;
+	cursor: pointer; 
+	transition: background 0s;  
+}
+
+.extra-info {
+	margin-bottom: 15px;
+}
+
+.extra-info .container {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.extra-info p {
+	font-size: 22px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+
+.extra-info h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 48px;
+}
+
+.hours, .location {
+	height: 250px;
+	float: left;
+	display: block;
+	text-align: center;
+	width: 522px;
+}
+
+.location .button {
+	margin-left: 0px;;
+	font-size: 20px;
+	color: white;
+}
+
+
+.footer-text, .footer-images {
+	text-align: center;
+	float: center;
+}
+
+/*--------------------MENU PAGE STYLES---------------*/
+.page-title .container {
+	width: 58em;
+	float: center;
+}
+
+.page-title h1 {
+	margin-top: 150px;
+	font-family: 'Dosis', sans-serif;
+	font-style: bold;
+	font-size: 108px;
+}
+
+.page-title hr {
+    height: 3px;
+    background: black;
+    width: 50%;
+}
+
+.menu-links .container {
+	width: 58em;
+	float: center;
+}
+
+.menu-links table {
+	margin-left: 120px;
+}
+
+.menu-links td, .menu-links tr {
+
+	padding: 10px 10px 10px 10px;
+}
+
+.menu-links hr {
+    height: 3px;
+    background: black;
+    width: 50%;
+}
+
+/* -------------------CATERING STYLES---------------*/
+.catering .container {
+	width: 58em;
+	float: center;
+}
+
+.catering h1 {
+	margin-top: 150px;
+	font-family: 'Dosis', sans-serif;
+	font-style: bold;
+	font-size: 108px;
+}
+
+.catering hr {
+    height: 3px;
+    background: black;
+    width: 90%;
+}
+
+.catering-text, .catering-image {
+	float: left;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.catering-image {
+	width: 300px;
+}
+
+.catering-text {
+	width: 450px;
+	font-family: 'Dosis', sans-serif;
+	text-align: left;
+	font-size: 210%;
+}
+
+.menu-viewer .container {
+	width: 58em;
+	float: center;
+}
+
+.menu-viewer hr {
+    height: 3px;
+    background: black;
+    width: 90%;
+}
+
+/* -------------------TAKEOUT SPECIALS STYLES---------------*/
+.takeoutspecials .container {
+	width: 900px;
+	float: center;
+}
+
+.takeoutspecials h1 {
+	margin-top: 150px;
+	font-family: 'Dosis', sans-serif;
+	font-style: bold;
+	font-size: 108px;
+}
+
+.takeoutspecials hr {
+    height: 3px;
+    background: black;
+    width: 70%;
+}
+
+.takeoutspecials-title {
+	font-family: 'Dosis', sans-serif;
+	font-size: 42px;
+}
+
+.takeoutspecials-text, .specials-image {
+	display: block;
+	margin-bottom: 10px;
+	float: center;
+}
+
+.takeoutspecials-image img {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.takeoutspecials-text {
+	font-family: 'Dosis', sans-serif;
+	text-align: left;
+	font-size: 210%;
+}
+
+.takeoutspecials-text ol li {
+	font-size: 20px;
+}
+
+.takeoutspecials-text p {
+	font-size: 16px;
+}
+
+.takeoutspecials-text strong {
+	color: #484f6c;
+}
+
+.takeoutspecials-text .pricetag {
+	color: #484f6c;
+	font-size: 28px;
+}
+
+/* -------------------PRIVATE FUNCTIONS STYLES---------------*/
+.private-functions {
+	height: 1000px;
+	background: url("Images/privatefunctionsbg.jpg") top center repeat repeat;
+
+}
+
+.private-function-details .container {
+	width: 900px;
+	float: center;
+}
+
+.details {
+	margin-top: 40px;
+	font-size: 24px;
+	text-align: left;
+}
+
+.details li {
+	margin-top: 10px;
+}
+
+.private-function-details hr {
+    height: 3px;
+    background: black;
+    width: 70%;
+}
+
+
+
+
