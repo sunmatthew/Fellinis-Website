@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fellini's Italian Eatery</title>
+		<link rel="icon" href="http://www.fellinisitalianeatery.com/images/felliniicon.ico" type="image/x-icon"/> 
+		<link rel="shortcut icon" href="http://www.fellinisitalianeatery.com/images/felliniicon.ico" type="image/x-icon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" CONTENT="Oak, Ridges, Pizza, Pasta, Takeout, Restaurant, Italian, Fellini, Fellini’s, Authentic, Pizza, Spaghetti, Penne, Rose, Sauce, Patio, Wings, Italian, Eatery, Home-style, Dine-In, Delivery, Eat Smart Award, Winner, Aurora, Newmarket, Richmond, Hill, King, City, Ontario, Catering, Special, Events, Private, Functions, Occasions,">
+		<meta name="description" CONTENT="Great Authentic Italian Pizzas &amp; Pastas! Dine-In, Takeout and Delivery! Come dine-in and choose one of our great daily Specials! Eat Smart Award Winner for the Past 6 Years! Located directly on Yonge Street in heart of Oak Ridges, Richmond Hill, Ontario. Call now for TAKEOUT OR DELIVEY (905)773-2211">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300|Raleway|Dosis' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".mobile-show").click(function() {
+					$(".navigation .container").hide();
+					$(".mobile-nav").slideDown("slow");
+				});
+
+				$(".mobile-close").click(function() {
+					$(".mobile-nav").slideUp("slow", function (){
+						$(".navigation .container").show();
+					});
+				});
+			
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="navigation">
+			<div class="mobile-nav">
+				<button class="mobile-close"><strong>X</strong></button>
+				<ul class="nav-mobile">
+					<li class="adjust"><a href="index.html">Home</a></li>
+					<li><a href="catering.html">Catering</a></li>
+					<li><a href="takeoutspecials.html">Takeout Specials</a></li>
+					<li><a href="privatefunctions.html">Private Functions</a></li>
+				</ul>
+			</div>
+
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="Images/fellinilogo.gif"></a>
+				</div>
+				<div class="top-banner">
+					<a href="contactus.html"><img src="Images/callin.png"></a>
+				</div>
+
+				<div class="nav-bar">
+					<ul class="nav">
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "catering.html">Catering</a></li>
+						<li><a href = "takeoutspecials.html">Takeout Specials</a></li>
+						<li><a href = "privatefunctions.html">Private Functions</a></li>
+					</ul>
+				</div>
+				
+				<button class="mobile-show">
+					<img src="Images/expand.png" height="35">
+				</button>
+			</div>
+		</div>
+
+		<div class="subscribe-bg">
+			<div class="container">
+				<div class="form-container">
+					<form method="post" action="http://www.matthewsun.ca/lists/?p=subscribe&id=1" name="subscribeform" class="subform">
+						<div class="content"><h3>Subscribe to our Club!</h3>
+								<ul class="sub-info">
+									<p>Be the first to know about:</p>
+									<li>Great deals, offers, and coupons</li>
+									<li>Updates on holiday hours and specials</li>
+									<li>Online updates on our menu</li>
+									<li>Many more exclusive subscriber info!</li>
+								</ul>
+							<script language="Javascript" type="text/javascript">
+							function checkform()
+							{
+							  for (i=0;i<fieldstocheck.length;i++) {
+							    if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].type") == "checkbox") {
+							      if (document.subscribeform.elements[fieldstocheck[i]].checked) {
+							      } else {
+							        alert("Please enter your "+fieldnames[i]);
+							        eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+							        return false;
+							      }
+							    } else {
+							      if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+							        alert("Please enter your "+fieldnames[i]);
+							        eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+							        return false;
+							      }
+							    }
+							  }
+							  for (i=0;i<groupstocheck.length;i++) {
+							    if (!checkGroup(groupstocheck[i],groupnames[i])) {
+							      return false;
+							    }
+							  }
+							  
+							  if (! checkEmail()) {
+							    alert("Email address is not valid");
+							    return false;
+							  }
+							  return true;
+							}
+
+							var fieldstocheck = new Array();
+							var fieldnames = new Array();
+							function addFieldToCheck(value,name)
+							{
+							  fieldstocheck[fieldstocheck.length] = value;
+							  fieldnames[fieldnames.length] = name;
+							}
+							var groupstocheck = new Array();
+							var groupnames = new Array();
+							function addGroupToCheck(value,name)
+							{
+							  groupstocheck[groupstocheck.length] = value;
+							  groupnames[groupnames.length] = name;
+							}
+
+							function compareEmail()
+							{
+							  return (document.subscribeform.elements["email"].value == document.subscribeform.elements["emailconfirm"].value);
+							}
+
+							function checkEmail()
+							{
+							  var re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+							    return re.test(document.subscribeform.elements["email"].value);
+							}
+
+							function checkGroup(name,value)
+							{
+							  option = -1;
+							  for (i=0;i<document.subscribeform.elements[name].length;i++) {
+							    if (document.subscribeform.elements[name][i].checked) {
+							      option = i;
+							    }
+							  }
+							  if (option == -1) {
+							    alert ("Please enter your "+value);
+
+							    return false;
+							  }
+
+							  return true;
+							}
+
+							</script>
+							<form method="post" action="" name="subscribeform">
+								<table border=0 class="form-table">
+									<tr><td class="attributeinput"><input type=text name=email value="" size="30" placeholder="Email Address"/>
+										<script language="Javascript" type="text/javascript">addFieldToCheck("email","Email address");</script>
+									</td></tr>
+									<input type="hidden" name="htmlemail" value="1" />
+
+									<tr><td class="attributeinput"><input type="text" name="attribute1"  class="attributeinput" size="30" value="" placeholder="First Name"/>
+										<script language="Javascript" type="text/javascript">addFieldToCheck("attribute1","First Name:");</script>
+									</td></tr>
+
+									<tr><td class="attributeinput"><input type="text" name="attribute2"  class="attributeinput" size="30" value="" placeholder="Last Name"/>
+										<script language="Javascript" type="text/javascript">addFieldToCheck("attribute2","Last Name:");</script>
+									</td></tr>
+
+									<tr><td class="attributeinput">
+										<input type="hidden" name="list[2]" value="signup" />
+										<input type="hidden" name="listname[2]" value="newsletter"/>
+										<div style="display:none"><input type="text" name="VerificationCodeX" value="" size="20"></div>
+										<p><input type=submit name="subscribe" value="Sign Up Now" onClick="return checkform();" class="sub-button"></p>
+									</td></tr>
+								</table>
+							 </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="private-function-details">
+			<div class="container">
+
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+					<hr>
+				<p class>Prices and Items subject to change without notice. Taxes not included | &copy; Fellini's Italian Eatery Inc.</p>
+				<div class="footer-text">
+					<a href="contactus.html">Contact Us</a>
+					 | 
+					<a href="contactus.html"> Job Inquires</a>
+				</div>
+				<div class="footer-images">
+					<img src="Images/weaccept.gif?">
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+
+
+</html>

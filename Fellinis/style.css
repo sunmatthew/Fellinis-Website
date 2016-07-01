@@ -25,6 +25,7 @@ body {
 	background:url("Images/banner.png") top center repeat-x; 
 	position: fixed;
 	width: 100%;
+	min-width: 1200px;
 }
 
 .logo, .top-banner {
@@ -235,7 +236,7 @@ body {
 	height: 250px;
 	width: 250px;
 	text-align: center;
-	margin-top: 49px;
+	margin-top: 40px;
 }
 
 .subtitle {
@@ -263,11 +264,11 @@ body {
 .subscribers .container h1 {
 	font-family: 'Dosis', sans-serif;
 	font-style: bold;
-	font-size: 3em;
+	font-size: 84px;
 }
 
 .subscribers .container p {
-	font-size: 1em;
+	font-size: 36px;
 }
 
 .subscribers .button {
@@ -277,6 +278,7 @@ body {
   text-decoration: none;
   text-align: center;
   margin-right: 100px;
+  font-size: 36px;
 }
 
 .subscribers .button:hover, .extra-info .button:hover {
@@ -322,6 +324,14 @@ body {
 	color: white;
 }
 
+.footer hr {
+	float: center;
+	text-align: center;
+	 height: 3px;
+    background: black;
+    width: 70%;
+}
+
 
 .footer-text, .footer-images {
 	text-align: center;
@@ -347,30 +357,49 @@ body {
     width: 50%;
 }
 
-.menu-links .container {
-	width: 58em;
-	float: center;
+.menu-links .menu-row a{
+	margin-top: 145px;
 }
 
-.menu-links table {
-	margin-left: 120px;
+
+.menu-links img {
+	left: 0;
 }
 
-.menu-links td, .menu-links tr {
-
-	padding: 10px 10px 10px 10px;
+.menu-links img{
+	position: absolute;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 }
+
+.menu-links .blurry:hover{
+	opacity:0;
+}
+
+
 
 .menu-links hr {
+	float: center;
     height: 3px;
     background: black;
     width: 50%;
 }
 
+.menu-footer .menu-hr {
+	margin-top: 900px;
+	float: center;
+    height: 3px;
+    background: black;
+    width: 40%;
+}
+
 /* -------------------CATERING STYLES---------------*/
 .catering .container {
 	width: 58em;
-	float: center;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .catering h1 {
@@ -405,7 +434,8 @@ body {
 
 .menu-viewer .container {
 	width: 58em;
-	float: center;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .menu-viewer hr {
@@ -415,7 +445,89 @@ body {
 }
 
 /* -------------------TAKEOUT SPECIALS STYLES---------------*/
-.takeoutspecials .container {
+.takeout-banner {
+	height : 1000px;
+	background-image: url("Images/privatefunctionsbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-width: 1200px;
+}
+
+.takeout-banner .container {
+	float: center;
+}
+
+.takeout-banner .container .buttons {
+	float: center;
+	margin-top: 200px;
+}
+
+.buttons img {
+	height: 100px;
+	width: 100px;
+	margin-left: 30px;
+	 -webkit-transition: width 1s, height 1s; /* Safari */
+    transition: width 1s, height 1s;
+}
+
+.buttons img:hover {
+	height: 110px;
+	width: 110px;
+
+}
+
+.specials-info {
+	text-align: left;
+	float: center;
+	margin: auto;
+	margin-top: 20px;
+	width: 1000px;
+	height: 600px;
+	background-color: #BB3232;
+}
+
+.d2-text {
+	padding-top: 40px;
+}
+
+.specials-info .d2-text ol li{
+	color: white;
+	font-size: 22px;
+}
+
+.specials-info .d2-text p {
+	font-size: 24px;
+}
+
+.d4-text {
+	padding-top: 30px;
+}
+
+.specials-info .d4-text ol li{
+	color: white;
+	font-size: 30px;
+}
+
+.specials-info .d4-text p {
+	font-size: 30px;
+}
+
+.pizza-text {
+	padding-top: 40px;
+}
+
+.specials-info .pizza-text ol li{
+	color: white;
+	font-size: 30px;
+}
+
+.specials-info .pizza-text p {
+	font-size: 30px;
+}
+
+
+/*.takeoutspecials .container {
 	width: 900px;
 	float: center;
 }
@@ -428,6 +540,7 @@ body {
 }
 
 .takeoutspecials hr {
+	float: center;
     height: 3px;
     background: black;
     width: 70%;
@@ -472,12 +585,16 @@ body {
 .takeoutspecials-text .pricetag {
 	color: #484f6c;
 	font-size: 28px;
-}
+}*/
 
 /* -------------------PRIVATE FUNCTIONS STYLES---------------*/
 .private-functions {
-	height: 800px;
-	background: url("Images/privatefunctionsbg.jpg") top center repeat repeat;
+	height: 1000px;
+	background-image: url("Images/catering2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-width: 1200px;
 }
 
 .private-functions .container {
@@ -486,11 +603,12 @@ body {
 }
 
 .private-functions h1 {
-	margin-top: 300px;
+	margin-top: 400px;
 	font-family: 'Dosis', sans-serif;
 	font-style: bold;
 	font-size: 108px;
 	color: white;
+
 }
 
 .private-functions p {
@@ -518,20 +636,23 @@ body {
 .private-function-details .container {
 	width: 900px;
 	float: center;
-
 }
 
 .details {
+	float: center;
 	margin-top: 30px;
 	font-size: 24px;
-	text-align: left;
+	text-align: center;
 }
 
 .details li {
 	margin-top: 10px;
+	float: center;
+	text-align: left;
 }
 
 .private-function-details hr {
+	float: center;
     height: 3px;
     background: black;
     width: 70%;
@@ -540,7 +661,11 @@ body {
 /* -------------------CONTACT US STYLES---------------*/
 .contact-us-banner {
 	height : 350px;
-	background: url("Images/contactusbg.jpg") top center repeat repeat;
+	background-image: url("Images/contactusbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-width: 1200px;
 }
 
 .contact-us-banner .container {
@@ -586,6 +711,7 @@ body {
 }
 
 .contact-details hr {
+	float: center;
 	height: 3px;
     background: black;
     width: 70%;
@@ -597,11 +723,72 @@ body {
 	text-transform: none;
 	margin-left: 20px;
 	text-align: center;
-
 }
 
+/* -------------------SUBSCRIBE PAGE STYLES---------------*/
+.subscribe-bg {
+	height : 800px;
+	background-image: url("Images/subclubbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-width: 1200px;
+}
 
+.subscribe-bg .container {
+	width: 1100px;
+}
 
+.subscribe-bg .content h3 {
+	margin-top: 230px;
+	font-family: 'Dosis', sans-serif;
+	font-style: bold;
+	font-size: 108px;
+	color: white;
+}
+
+.subscribe-bg .content {
+	font-size: 24px;
+}
+
+.subscribe-bg .content input {
+	height: 60px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.form-table {
+	float: left;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.sub-info {
+	float: left;
+	color: white;
+	font-size: 33px;
+	text-align: left;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.sub-info li:hover {
+	color: white;
+}
+
+.sub-button {
+	text-transform: uppercase;
+	width: 100%;
+	background: #BB3232;
+  	color: white;
+  	border: none;
+}
+
+.sub-button:hover {
+	background: #cb3c3c;
+	cursor: pointer; 
+	transition: background 0s; 
+}
 
 
 

@@ -2,12 +2,21 @@
 <html>
 	<head>
 		<title>Fellini's Italian Eatery</title>
+		<link rel="icon" href="http://www.fellinisitalianeatery.com/images/felliniicon.ico" type="image/x-icon"/> 
+		<link rel="shortcut icon" href="http://www.fellinisitalianeatery.com/images/felliniicon.ico" type="image/x-icon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" CONTENT="Oak, Ridges, Pizza, Pasta, Takeout, Restaurant, Italian, Fellini, Fellini’s, Authentic, Pizza, Spaghetti, Penne, Rose, Sauce, Patio, Wings, Italian, Eatery, Home-style, Dine-In, Delivery, Eat Smart Award, Winner, Aurora, Newmarket, Richmond, Hill, King, City, Ontario, Catering, Special, Events, Private, Functions, Occasions,">
+		<meta name="description" CONTENT="Great Authentic Italian Pizzas &amp; Pastas! Dine-In, Takeout and Delivery! Come dine-in and choose one of our great daily Specials! Eat Smart Award Winner for the Past 6 Years! Located directly on Yonge Street in heart of Oak Ridges, Richmond Hill, Ontario. Call now for TAKEOUT OR DELIVEY (905)773-2211">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300|Raleway|Dosis' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script>
 			$(document).ready(function() {
+				$(".d4-text").hide();
+				$(".pizza-text").hide();
+
+
 				$(".mobile-show").click(function() {
 					$(".navigation .container").hide();
 					$(".mobile-nav").slideDown("slow");
@@ -18,8 +27,31 @@
 						$(".navigation .container").show();
 					});
 				});
-			
+
+				$(".d2").click(function() {
+					$(".d4-text").hide();
+					$(".pizza-text").hide();
+					$(".d2-text").fadeIn();
+				});
+
+				$(".d4").click(function() {
+					$(".d2-text").hide();
+					$(".pizza-text").hide();
+					$(".d4-text").fadeIn();
+				});
+
+				$(".pizza").click(function() {
+					$(".d2-text").hide();
+					$(".d4-text").hide();
+					$(".pizza-text").fadeIn();
+				});
+
+
+
+
 			});
+
+
 		</script>
 	</head>
 
@@ -41,7 +73,7 @@
 					<a href="index.html"><img src="Images/fellinilogo.gif"></a>
 				</div>
 				<div class="top-banner">
-					<a href="contactus.html"><img src="Images/callin.png"></a>
+					<a href="#"><img src="Images/callin.png"></a>
 				</div>
 
 				<div class="nav-bar">
@@ -59,108 +91,126 @@
 			</div>
 		</div>
 
-		<div class="takeoutspecials">
+		<div class="takeout-banner">
 			<div class="container">
-				<h1>Specials</h1>
-				<hr>
-				<h2 class="takeoutspecials-title">Dinner For Two</h2>
-				<div class="takeoutspecials-image">
-					<img src = "Images/placeholder.png" height="250px"> 
-					<img src = "Images/placeholder.png" height="250px"> 
-					<img src = "Images/placeholder.png" height="250px"> 
-				</div>
-				<div class="takeoutspecials-text">
-					<ol>
-						<li>
-							<strong>Meatballs & Sausage Dinner</strong> for TWO-TO-GO Penne or Spaghetti in a Tomato Sauce, Soup or Salad, and Garlic Bread
-							<p class="pricetag"><strong>$23.95</strong></p>
-						</li>
-						<li>
-							<strong>Linguine Seafood Delight Dinner</strong> for TWO-TO-GO Octopus, mussels, clams, & squid in a Marinara Sauce, Soup or Salad, and Garlic Bread
-							<p class="pricetag"><strong>$24.95</strong></p>
-						</li>
-						<li>
-							<strong>Meat Raviolis</strong> in a Tomato Sauce Dinner for TWO-TO-GO, Soup or Salad, and Garlic Bread
-							<p class="pricetag"><strong>$23.95</strong></p>
-						</li>
-						<li>
-							<strong>Penne or Spaghetti in a Rose Sauce Dinner</strong> for TWO-TO-GO, Soup or Salad, and Garlic Bread
-							<p class="pricetag"><strong>$23.95</strong></p>
-						</li>
-						<li>
-							<strong>Dinner for 2 Veal Parms</strong>, Penne or Spaghetti in Tomato Sauce, Soup or Salad, and Garlic Bread
-							<p class="pricetag"><strong>$28.95</strong></p>
-						</li>
-						<li>
-							<strong>Dinner for 2 Chicken Parms</strong>, Penne or Spaghetti in Tomato Sauce, Soup or Salad, and Garlic Bread
-							<p class="pricetag"><strong>$28.95</strong></p>
-						</li>
-					</ol>
-				</div>
+				<div class="buttons">
+ 					<img src="Images/d2button.png" class="d2">
+ 					<img src="Images/d4button.png" class="d4">
+ 					<img src="Images/pizzabutton.png" class="pizza">
+ 					<a href="Menus/takeoutmenu.pdf" target="_blank"><img src="Images/plusbutton.png"></a>
+ 				</div>
 
-				<h2 class="takeoutspecials-title">Family Feast For Four</h2>
-				<div class="takeoutspecials-image">
-					<img src = "Images/placeholder.png" height="250px"> 
-					<img src = "Images/placeholder.png" height="250px"> 
-					<img src = "Images/placeholder.png" height="250px"> 
-				</div>
-				<div class="takeoutspecials-text">
-					<ol>
-						<li>
-							<strong>Meatballs & Sausage Dinner</strong> for FOUR, Spaghetti or Penne, Soups or Salads, Basic Pizza, and Garlic Bread
-							<p class="pricetag"><strong>$45.95</strong></p>
-						</li>
-						<li>
-							<strong>Chicken Parmigiana Dinner</strong> for FOUR, Spaghetti or Penne, Soups or Salads, Basic Pizza, and Garlic Bread
-							<p class="pricetag"><strong>$53.80</strong></p>
-						</li>
-						<li>
-							<strong>Linguini Seafood Delight</strong> pasta in a Marinara Sauce Dinner for FOUR, Soups or Salads, Basic Pizza, and Garlic Bread
-							<p class="pricetag"><strong>$45.95</strong></p>
-						</li>
-						<li>
-							<strong>Veal Parmigiana Dinner</strong> for FOUR, Spaghetti or Penne, Soups or Salads, Basic Pizza, and Garlic Bread
-							<p class="pricetag"><strong>$53.80</strong></p>
-						</li>
-					</ol>
-				</div>
+ 				<div class="specials-info">
+ 					<div class="d2-text">
+						<ol>
+							<li>
+								<strong>Dinner for 2: Meatballs & Sausage Dinner</strong> Penne or Spaghetti in a Tomato Sauce, Soup or Salad, and Garlic Bread
+								<p class="pricetag"><strong>$23.95</strong></p>
+							</li>
+							<li>
+								<strong>Dinner for 2: Linguine Seafood Delight</strong> includes octopus, mussels, clams, & squid in a Marinara Sauce, Soup or Salad, and Garlic Bread
+								<p class="pricetag"><strong>$24.95</strong></p>
+							</li>
+							<li>
+								<strong>Dinner for 2: Meat Raviolis</strong> in a Tomato Sauce includes, Soup or Salad, and Garlic Bread
+								<p class="pricetag"><strong>$23.95</strong></p>
+							</li>
+							<li>
+								<strong>Dinner for 2: Penne or Spaghetti with Rose Sauce</strong>, includes Soup or Salad, and Garlic Bread
+								<p class="pricetag"><strong>$23.95</strong></p>
+							</li>
+							<li>
+								<strong>Dinner for 2: Veal Parms</strong>, Penne or Spaghetti in Tomato Sauce, Soup or Salad, and Garlic Bread
+								<p class="pricetag"><strong>$28.95</strong></p>
+							</li>
+							<li>
+								<strong>Dinner for 2: Chicken Parms</strong>, Penne or Spaghetti in Tomato Sauce, Soup or Salad, and Garlic Bread
+								<p class="pricetag"><strong>$28.95</strong></p>
+							</li>
+						</ol>
+ 					</div>
 
-				<h2 class="takeoutspecials-title">Pizzeria Specials</h2>
-				<div class="takeoutspecials-image">
-					<img src = "Images/placeholder.png" height="250px"> 
-					<img src = "Images/placeholder.png" height="250px"> 
-					<img src = "Images/placeholder.png" height="250px"> 
-				</div>
-				<div class="takeoutspecials-text">
-					<ol>
-						<li>
-							<strong>12" Basic Tomato Sauce & Mozzarella Cheese</strong> +1 Reg. Topping with a 7" Small Tray Penne or Spaghetti in Tomato Sauce
-							<p class="pricetag"><strong>$13.95</strong></p>
-						</li>
-						<li>
-							<strong>12" Basic Tomato Sauce & Mozzarella Cheese</strong> +1 Reg. Topping with 10 Fellini's Baked Battered Chicken Wings
-							<p class="pricetag"><strong>$18.49</strong></p>
-						</li>
-						<li>
-							<strong>14" Basic Tomato Sauce & Mozzarella Cheese</strong> +1 Reg. Topping with a 9" Tray Penne or Spaghetti in Tomato Sauce, and 4 pieces of Garlic Bread
-							<p class="pricetag"><strong>$19.95</strong></p>
-						</li>
-					</ol>
-				</div>
+ 					<div class="d4-text">
+ 						<ol>
+							<li>
+								<strong>Family Feast: Meatballs & Sausage Dinner</strong> for FOUR, Spaghetti or Penne, Soups or Salads, Basic Pizza, and Garlic Bread
+								<p class="pricetag"><strong>$45.95</strong></p>
+							</li>
+							<li>
+								<strong>Family Feast: Chicken Parmigiana Dinner</strong> for FOUR, Spaghetti or Penne, Soups or Salads, Basic Pizza, and Garlic Bread
+								<p class="pricetag"><strong>$53.80</strong></p>
+							</li>
+							<li>
+								<strong>Family Feast: Linguini Seafood Delight</strong> pasta in a Marinara Sauce Dinner for FOUR, Soups or Salads, Basic Pizza, and Garlic Bread
+								<p class="pricetag"><strong>$45.95</strong></p>
+							</li>
+							<li>
+								<strong>Family Feast: Veal Parmigiana Dinner</strong> for FOUR, Spaghetti or Penne, Soups or Salads, Basic Pizza, and Garlic Bread
+								<p class="pricetag"><strong>$53.80</strong></p>
+							</li>
+						</ol>
+ 					</div>
 
-				<a href="Menus/takeoutmenu.pdf" target="_blank"><h2 class="takeoutspecials-title">Click here to view our full takeout menu</h2></a> 
-				<hr>
+ 					<div class="pizza-text">
+						<ol>
+							<li>
+								<strong>Pizzeria Special: 12" Basic Tomato Sauce & Mozzarella Cheese</strong> +1 Reg. Topping with a 7" Small Tray Penne or Spaghetti in Tomato Sauce
+								<p class="pricetag"><strong>$13.95</strong></p>
+							</li>
+							<li>
+								<strong>Pizzeria Special: 12" Basic Tomato Sauce & Mozzarella Cheese</strong> +1 Reg. Topping with 10 Fellini's Baked Battered Chicken Wings
+								<p class="pricetag"><strong>$18.49</strong></p>
+							</li>
+							<li>
+								<strong>Pizzeria Special: 14" Basic Tomato Sauce & Mozzarella Cheese</strong> +1 Reg. Topping with a 9" Tray Penne or Spaghetti in Tomato Sauce, and 4 pieces of Garlic Bread
+								<p class="pricetag"><strong>$19.95</strong></p>
+							</li>
+						</ol>
+ 					</div>
+ 				</div>
 			</div>
+
 		</div>
 
+		<div class="takeout-buttons">
+
+		</div>
+
+		<!-- <div class="contact-details">
+			<div class="container">
+				<p>13162 Yonge St. Oak Ridges Richmond Hill, Ontario, L4E 3M2</p>
+				<table>
+					<tr>
+						<td>
+							<img src="Images/fellinimap.gif">
+							<a href="https://www.google.ca/maps/place/Fellini's+Italian+Eatery+Inc./@43.957607,-79.455786,14z/data=!4m2!3m1!1s0x882ad5ccda67568f:0x4e70748394354095?hl=en" target="_blank">Larger View</a>
+						</td>
+						<td>
+							<p class="phone-num-heading">Main Order Line:</p>
+							<p class="phone-num"><img src="Images/phoneicon.png" height="30px">(905)773-2211</p>
+							<p class="phone-num">Call the restaurant to place an order for take-out, delivery, catering or to book for a private event.</p>
+
+							<p class="phone-num-heading">Office Line:</p>
+							<p class="phone-num"><img src="Images/phoneicon.png" height="30px">(289)809-0637</p>
+							<p class="phone-num">Call to make an inquiry about a job or to sell us a product or service.</p>
+						</td>
+					</tr>
+				</table>
+				<hr>
+				<p class="phone-num-heading">Public Hours of Operation</p>
+				<p class="contact-text">Open Nights at 4:00pm 6 nights a week for Dine-In, Take-Out & Delivery. <br>Closed Mondays and Statutory Holidays.</p>
+			</div>
+		</div>
+ -->
 
 		<div class="footer">
 			<div class="container">
+				<hr>
 				<p class>Prices and Items subject to change without notice. Taxes not included | &copy; Fellini's Italian Eatery Inc.</p>
 				<div class="footer-text">
 					<a href="contactus.html">Contact Us</a>
 					 | 
-					<a href="#"> Job Inquires</a>
+					<a href="contactus.html"> Job Inquires</a>
 				</div>
 				<div class="footer-images">
 					<img src="Images/weaccept.gif?">
